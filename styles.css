@@ -1,1 +1,17 @@
 /*  your css code here. If applicable */
+body{
+	font-family: Arial, sans-serif;
+}
+input[type="text"]{
+	width:100%;
+	padding:10px;
+	margin-bottom:10px;
+	box-sizing:border-box;
+}
+button{
+	padding:10px 20px;
+	background-color:blue;
+}
+.delete{
+	background-color:red
+}
