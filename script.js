@@ -10,19 +10,19 @@ if(booktitle && auth && isbnnum){
 	row.innerHTML=`
 	<td>${booktitle}</td>
 	<td>${auth}</td>
-	
 	<td>${isbnnum}</td>
-	<td><button class="delete">X</button></td>`;
+	<td><button class="delete">X</button></td>
+	`;
 
 	booklist.appendChild(row);
-	document.getElementById("auth").value='';
-	document.getElementById("booktitle").value='';
-	document.getElementById("isbnnum").value='';
+	document.getElementById("author").value='';
+	document.getElementById("title").value='';
+	document.getElementById("isbn").value='';
 }
 
 });
 document.getElementById("book-list").addEventListener("click",function(event){
-if(event.target.classList.contains('delete')){
+if(event.target.classList.contains("delete")){
 event.target.parentElement.parentElement.remove();
 }
 });
